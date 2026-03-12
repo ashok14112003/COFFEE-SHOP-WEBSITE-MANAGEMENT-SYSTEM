@@ -1,0 +1,176 @@
+
+<html>
+<head>
+    <title>Cup House</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        h2 {
+            font-family: "Outfit", sans-serif;
+            text-align: left;
+            font-size: 40;
+            color: white;
+            background-color: rgb(74, 33, 33);
+            padding: 20px;
+
+        }
+
+        ul {
+            background-color: rgb(74, 33, 33);
+            overflow: hidden;
+            padding:20;
+            margin: 0;
+        }
+
+        ul li {
+            list-style: none;
+            float: left;
+            padding: 0 2%;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            font-family: "Raleway", sans-serif;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        h3 {
+            font-family: "Raleway", sans-serif;
+            padding: 20;
+            font-size: 20;
+        }
+
+        form {
+            padding: 30;
+            margin: 10;
+        }
+
+        td {
+            font-size: larger;
+            font-family: "Raleway", sans-serif;
+            padding-bottom: 20;
+        }
+
+        h1 {
+            font-family: "Raleway", sans-serif;
+            background-color: rgb(74, 33, 33);
+            color: white;
+            margin: 0 20;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Cup House</h2>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="MENU.html">MENU</a></li>
+        <li><a href="ABOUT US.html">ABOUT US</a></li>
+        <li><a href="CONTACT US.html">CONTACT US</a></li>
+        <li><a href="COFFEE HISTORY.html">COFFEE HISTORY</a></li>
+    </ul>
+    <center>
+        <h3>Here is your Homedelivery !<br>
+            <br>Kindly provide your details below
+        </h3>
+        <h1>Order Details</h1>
+    </center>
+    <form action="login.py">
+        <center>
+            <table>
+                <tr>
+                    <td>
+                        <h4>Name:</h4>
+                    </td>
+                    <td><input type="text" name="name" placeholder="Enter Your Name"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Email Address:</h4>
+                    </td>
+                    <td><input type="email" placeholder="Enter Your Email ID" name="mail"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Phone Number:</h4>
+                    </td>
+                    </td>
+                    </td>
+                    <td><input type="phone number" placeholder="Enter Phone Number" name="number"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Explore Vareities:</h4>
+                    </td>
+                    <td>
+                        <select name="vareities">
+                            <option>ESPRESSO</option>
+                            <option>CAPPUCCINO</option>
+                            <option>MOCHA</option>
+                            <option>CAFE LATTE</option>
+                            <option>CHOCOLATE MILK</option>
+                            <option>TRIPLO</option>
+                            <option>HONEY RAF</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Quantity:</h4>
+                    </td>
+                    <td>
+                        <select name="sizes">
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Address:</h4>
+                    </td>
+                    <td><input type="text" placeholder="Enter Address" name="address"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Pincode:</h4>
+                    </td>
+                    <td><input type="text" placeholder="Enter Pincode" name="pincode"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Payment Mode:</h4>
+                    </td>
+                    <td>
+                        <select name="payment">
+                            <option>UPI Transaction</option>
+                            <option>Debit / Credit Card</option>
+                            <option>Net Banking</option>
+                            <option>Cash on Delivery</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Order">
+            <input type="reset" value="clear">
+        </center>
+    </form>
+
+</body>
+
+</html>
